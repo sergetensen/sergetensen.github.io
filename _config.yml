@@ -1,3 +1,14 @@
+lsi: false
+safe: true
+source: https://github.com/sergetensen/sergetensen.github.io
+incremental: false
+highlighter: rouge
+gist:
+  noscript: flase
+kramdown:
+  math_engine: mathjax
+  syntax_highligher: rouge
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
