@@ -22,8 +22,9 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Docs on Github and Jekyll use slightly different methods. Tried each and now
   following them parallel to learn the relationship between all components. 
-baseurl: "sergetensen.github.io" # the subpath of your site, e.g. /blog
-url: "https://sergetensen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+#url: "https://sergetensen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://0.0.0.0" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  sergetensen
 
