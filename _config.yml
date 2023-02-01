@@ -16,14 +16,15 @@ minimal_mistakes_skin    : "dark" # "default" "air", "aqua", "contrast", "dirt",
 
 # Site Settings
 locale                   : "en-US"
+date_format              : "%Y-%m-%d"
 title                    : "Computer Stories"
-title_separator          : "-"
+title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Serge Tensen"
 description              : "My computer stories serving as documentation and for fun."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://sergetensen.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "sergetensen/sergetensen.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -58,12 +59,12 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
+  hide                   : true # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
-  search_within_pages    : # true, false (default)
+  search_within_pages    : true # true, false (default)
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -105,10 +106,10 @@ analytics:
 # Site Author
 author:
   name             : "Serge Tensen"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I started my computer adventures in 1985 on a Sony HitBit 201-P MSX computer."
+  avatar           : "/assets/images/sony_hb101p_3b.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "My computer adventures started in 1985 on my Sony HitBit HB-201P MSX computer. :)"
   location         : "Deventer - The Netherlands"
-  email            :
+  email            : ghpages@70.16-12.net
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -286,8 +287,16 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
       share: true
       related: true
+      show_date: true
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      sidebar:
+        nav: "mymenu"
